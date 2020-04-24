@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginViewController">
+   <children>
+      <HBox layoutX="15.0" layoutY="14.0" prefHeight="157.0" prefWidth="371.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="117.0" prefWidth="64.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="64.0" text="Username:" />
+                  <Label text="Password:" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="117.0" prefWidth="185.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtName" promptText="username:" />
+                  <TextField fx:id="txtPassword" promptText="password:" />
+                  <Label fx:id="lblIncorrectData" text="Incorrect username or password!" visible="false" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginButtonPushed" text="Log in">
+               <HBox.margin>
+                  <Insets top="35.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
